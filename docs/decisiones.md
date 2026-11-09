@@ -1,5 +1,9 @@
 # Decisiones técnicas — Fase 0
 
+## DT-007 — Skills OpenCode sin duplicación
+
+AdminWeb consume mediante OpenCode V2 el catálogo HTTP de seis skills existentes revisadas y su política alojados en `FCMatch-Backend`, fijados a un SHA completo en `opencode.json`. No se duplican originales, lockfiles ni guías completas y no se usan rutas personales ni imports de código de aplicación entre repositorios. Un clon independiente solo necesita acceso HTTPS a GitHub para la descarga inicial del catálogo público; no se incluye una credencial. No cambia funciones, dependencias, permisos ni servidores MCP. Referencias: DT-007 de Backend y `docs/skills-opencode.md`; DT-008 de Frontend. Publicación aprobada; Fase 1 no iniciada.
+
 ## DT-006 — Logo oficial por tema
 
 Por petición del propietario, se usa `Logo.png` en claro y `Logo-modo-oscuro.png` en oscuro, incluyendo el favicon. Ambos PNG originales de 2752 × 1536 se conservan sin transformación; CSS selecciona el logo usando el tema aplicado antes del render y reacciona inmediatamente al alternarlo. Los recursos y componentes se distribuyen y verifican desde el frontend sin imports entre repositorios. No se añaden funcionalidades ni se avanza a Fase 1. Referencia cruzada: DT-007 de `FCMatch-Frontend/docs/decisiones.md`.
