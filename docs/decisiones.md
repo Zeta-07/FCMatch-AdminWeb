@@ -1,5 +1,9 @@
 # Decisiones técnicas — Fase 0
 
+## DT-011 — Modelos de Etapa 5 sin adelantar administración
+
+Etapas 3–4 aprobadas y Etapa 5 autorizada exclusivamente en Backend. Se regeneran los modelos compartidos cuya descripción de Avatar aclara S3 local real de desarrollo (HTTP solo 127.0.0.1) y R2 HTTPS para producción, integración real pendiente por decisión del propietario. AdminWeb no recibe pantallas, perfiles editables, credenciales de almacenamiento, funciones o permisos administrativos; continúa sin adelantar Fase 10. Tema/logos y excepciones Angular 22.2.4/TypeScript 6.0.3 intactos. Publicación autorizada tras verificaciones y actualización de PR #5, sin merge ni Etapa 6. Referencias: Backend DT-014/informe Etapa 5 y Frontend DT-012. Apartados anteriores históricos.
+
 ## DT-010 — Publicación aprobada sin adelantar AdminWeb
 
 El propietario aprueba Etapas 1 y 2 y autoriza commits/push de los modelos, documentación y mantenimiento en `feature/fase-1-identidad`, sin fusiones ni force push. Autoriza publicaciones posteriores de etapas aprobadas con checks satisfactorios, incluida expresamente Etapa 3 al finalizar. Esto no autoriza pantallas, autenticación o permisos del propietario fuera de Fase 10. Etapa 4 requiere aprobación; no secretos. Referencias: DT-011 de Backend y Frontend.
