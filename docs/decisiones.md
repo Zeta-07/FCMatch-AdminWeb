@@ -1,5 +1,9 @@
 # Decisiones técnicas — Fase 0
 
+## DT-013 — Contrato aditivo de búsqueda unificada
+
+Se sincronizan exclusivamente modelos generados de OpenAPI para el filtro opcional query de GET /users. No se incorporan pantallas de búsqueda/perfil, funciones administrativas ni cambios visuales. Filtros anteriores y representaciones conservados; decisiones Backend DT-016 y Frontend DT-014. Verificar check de mantenimiento; PR #5 sigue abierto sin merge y sin avanzar fases.
+
 ## DT-012 — Mantenimiento compartido de correcciones Etapa 6
 
 Se sincronizan exclusivamente modelos OpenAPI, tokens de themes.scss y componente compartido de tema con luna/sol accesible, junto con sus pruebas de infraestructura. Tokens nuevos documentados en Frontend DT-013; contrato numérico opt-in y UUID anteriores preservados según Backend DT-015. No se incorporan perfiles, búsquedas, pantallas de identidad del cliente ni funciones de administración. Logos y tema pre-render conservados; Angular 22.2.4/TS 6.0.3 mantienen excepciones aprobadas. Cambios autorizados para publicación en feature/fase-1-identidad tras todas las verificaciones, PR #5 abierto y sin merge. Etapa 6 sigue pendiente de revisión visual; no Etapa 7 ni Fase 10.
